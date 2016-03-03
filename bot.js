@@ -176,7 +176,7 @@ controller.hears(['Salut', 'Coucou', 'Plop', 'Hey'], 'direct_message,direct_ment
 });
 
 
-controller.on(['Glados','glados','portal','sexy'], ['direct_message','direct_mention','mention','ambient'],function(bot,message) {
+controller.hears(['Glados','glados','portal','sexy'], ['direct_message','direct_mention','mention','ambient'],function(bot,message) {
     bot.reply(message, 'It\'s been a long time. How have you been?');
 });
 
