@@ -169,25 +169,25 @@ controller.hears(['uptime','identify yourself','who are you','what is your name'
 });
 
 
-controller.hears(['Salut', 'Coucou', 'Plop', 'Hey'], 'direct_message,direct_mention,mention', function(bot, message) {
+controller.hears(['Salut', 'Coucou', 'Plop', 'Hey'],['direct_message','direct_mention','mention','ambient'],function(bot, message) {
 
     bot.reply(message, 'Hello and, again, welcome to the Aperture Science computer-aided enrichment center.');
 
 });
 
 
-controller.hears(['Glados','glados','portal','sexy'], ['direct_message','direct_mention','mention','ambient'],function(bot,message) {
+controller.hears(['Glados','glados','portal','sexy'],['direct_message','direct_mention','mention','ambient'],function(bot,message) {
     bot.reply(message, 'It\'s been a long time. How have you been?');
 });
 
 
-controller.hears(['blbl','mouarf','Portal'], ['direct_message','direct_mention','mention','ambient'],function(bot,message) {
+controller.hears(['blbl','mouarf','Portal'],['direct_message','direct_mention','mention','ambient'],function(bot,message) {
   bot.reply(message, 'Did you just stuff that Aperture Science Thing We Don\'t Know What It Does into an Aperture Science Emergency Intelligence Incinerator?');
 });
 
 
-controller.hears(['connard', 'enfoiré', 'enflure', 'connasse', 'raclure'], [], function(bot, message) {
-  bot.reply('You think you\'re doing some damage? Two plus two is... ten. IN BASE FOUR! I\'M FINE!');
+controller.hears(['connard', 'enfoiré', 'enflure', 'connasse', 'raclure'], ['direct_message','direct_mention','mention','ambient'],function(bot, message) {
+  bot.reply(message, 'You think you\'re doing some damage? Two plus two is... ten. IN BASE FOUR! I\'M FINE!');
 });
 
 
