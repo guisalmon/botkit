@@ -171,9 +171,14 @@ controller.hears(['uptime','identify yourself','who are you','what is your name'
 
 controller.hears(['Salut', 'Coucou', 'Plop', 'Hey'], 'direct_message,direct_mention,mention', function(bot, message) {
 
-    bot.reply(message, 'Hello and, again, welcome to the Aperture Science computer-aided enrichment center.')
+    bot.reply(message, 'Hello and, again, welcome to the Aperture Science computer-aided enrichment center.');
 
-})
+});
+
+
+controller.on('message_received',function(bot,message) {
+    bot.reply(message, 'I\'m the annoying bot');
+});
 
 
 function formatUptime(uptime) {
