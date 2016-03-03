@@ -18,17 +18,9 @@ run from a central location, and be used by many teams at the same time.
 
 ## Installation
 
-Botkit is available via NPM.
-
+Let's clone the bot
 ```bash
-npm install --save botkit
-```
-
-You can also check out Botkit directly from Git.
-If you want to use the example code and included bots, it may be preferable to use Github over NPM.
-
-```bash
-git clone git@github.com:howdyai/botkit.git
+git clone git@github.com:guisalmon/botkit.git
 ```
 
 After cloning the Git repository, you have to install the node dependencies. Navigate to the root of your cloned repository and use npm to install all necessary dependencies.
