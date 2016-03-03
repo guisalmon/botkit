@@ -181,6 +181,16 @@ controller.hears(['Glados','glados','portal','sexy'], ['direct_message','direct_
 });
 
 
+controller.hears(['blbl','mouarf','Portal'], ['direct_message','direct_mention','mention','ambient'],function(bot,message) {
+  bot.reply(message, 'Did you just stuff that Aperture Science Thing We Don\'t Know What It Does into an Aperture Science Emergency Intelligence Incinerator?');
+});
+
+
+controller.hears(['connard', 'enfoiré', 'enflure', 'connasse', 'raclure'], [], function(bot, message) {
+  bot.reply('You think you\'re doing some damage? Two plus two is... ten. IN BASE FOUR! I\'M FINE!');
+});
+
+
 function formatUptime(uptime) {
     var unit = 'second';
     if (uptime > 60) {
