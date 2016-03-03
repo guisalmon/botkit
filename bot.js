@@ -176,7 +176,7 @@ controller.hears(['Salut', 'Coucou', 'Plop', 'Hey'],['direct_message','direct_me
 });
 
 
-controller.hears(['Glados','glados','portal','sexy'],['direct_message','direct_mention','mention','ambient'],function(bot,message) {
+controller.hears(['Glados','glados','portal'],['direct_message','direct_mention','mention','ambient'],function(bot,message) {
     bot.reply(message, 'It\'s been a long time. How have you been?');
 });
 
@@ -198,6 +198,11 @@ controller.hears(['birthday', 'anniversaire', 'bday', 'naissance'], ['direct_mes
 controller.hears(['je crois'], ['direct_message','direct_mention','mention','ambient'],function(bot, message) {
   bot.reply(message, 'I don\'t think so');
 });
+
+controller.hears(['lol'], ['direct_message','direct_mention','mention','ambient'],function(bot, message) {
+  bot.reply(message, 'Your entire life has been a mathematical error. A mathematical error I\'m about to correct.');
+});
+
 
 function formatUptime(uptime) {
     var unit = 'second';
