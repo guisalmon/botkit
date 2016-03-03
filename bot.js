@@ -192,7 +192,7 @@ controller.hears(['connard', 'enfoiré', 'enflure', 'connasse', 'raclure'], ['di
 
 
 controller.hears(['birthday', 'anniversaire', 'bday', 'naissance'], ['direct_message','direct_mention','mention','ambient'],function(bot, message) {
-  bot.reply(message, 'You know how I'm going to live forever, but you're going to be dead in sixty years? Well, I\'ve been working on a belated birthday present for you. Well... more of a belated birthday medical procedure. Well. Technically, it\s a medical EXPERIMENT. What\'s important is, it\'s a present.');
+  bot.reply(message, 'You know how I\'m going to live forever, but you\'re going to be dead in sixty years? Well, I\'ve been working on a belated birthday present for you. Well... more of a belated birthday medical procedure. Well. Technically, it\'s a medical EXPERIMENT. What\'s important is, it\'s a present.');
 });
 
 function formatUptime(uptime) {
