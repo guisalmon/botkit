@@ -203,7 +203,7 @@ controller.hears(['lol'], ['direct_message','direct_mention','mention','ambient'
   bot.reply(message, 'Your entire life has been a mathematical error. A mathematical error I\'m about to correct.');
 });
 
-controller.hears(['XD', 'mdr'], ['ambient'], function(bot, message) {
+controller.hears([' '], ['ambient'], function(bot, message) {
   bot.reply(message, 'I\'m considering to terminate the personality construct android Slackbot, just for fun.');
 });
 
