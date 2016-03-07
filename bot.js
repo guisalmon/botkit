@@ -204,20 +204,14 @@ controller.hears(['lol'], ['direct_message','direct_mention','mention','ambient'
 });
 
 controller.hears(['XD !', 'Ciel que tu es drôle !', 'J\'ai tellement ri que je crois m\'être démi une côte. Ou bien c\'était le massage de @cyke.', 'xptdr l0uulZ'], ['ambient'], function(bot, message) {
-  bot.startConversation(message,function(err, convo) {
+    bot.reply(message, 'I\'m considering to terminate the personality construct android Slackbot, just for fun.');
+});
 
-      convo.ask('I\'m considering to terminate the personality construct android Slackbot, just for fun.',[
-          {
-              pattern: 'Please, do so!',
-              callback: function(response, convo) {
-                  convo.say('/kill @slackbot');
-                  convo.next();
-                  setTimeout(function() {
-                    convo.say('slapbot is insensible to my neurotoxin!');
-                  },3000);
-              }
-          }]);
-  });
+controller.hears(['Please, do so!'], ['direct_mention', 'direct_message', 'mention'], function(bot, message) {
+    bot.reply(message, '/kill @slackbot');
+    setTimeout(function () {
+        bot.reply(message, 'He is insensitive to my neurotoxin, but science improves every day !');
+    }, 2000);
 });
 
 
